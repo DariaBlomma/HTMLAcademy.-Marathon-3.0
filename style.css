@@ -691,13 +691,18 @@ input[type="text"]:focus, input[type="tel"]:focus {
     1. НЕ пустое
     2. НЕ в фокусе
     3. НЕ валидно */
-/* input:invalid:not(:focus):not(:placeholder-shown) {outline: 1px solid red; border: none;}  */
-input:focus:invalid {outline: 1px solid red; border: none;}
+/* input:invalid:not(:focus):not(:placeholder-shown) {outline: 1px solid red; border: none;}  
+input:focus:invalid {outline: 1px solid red; border: none;}*/
 input:valid:not(:focus):not(:placeholder-shown) {outline: 1px solid green; border: none;}
 
 .error-message {
 	margin: 0;
-	color: red;
+	margin-bottom: 35px;
+	color: rgb(9, 5, 5);
+}
+
+.invalid-field {
+	outline: 1px solid red; border: none;
 }
 
 .form__button {
